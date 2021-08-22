@@ -8,6 +8,7 @@ function eighGBandDelivery(params) {
     
 }
 
+// For 8Gb and 16 GB
 document.getElementById('eight-gb').addEventListener('click',function(){
     freeCharge.innerText= '0';
     updateTotalPrice();
@@ -16,6 +17,8 @@ document.getElementById('sixteen-gb').addEventListener('click',function(){
     freeCharge.innerText= '180';
     updateTotalPrice();
 })
+
+// For 256 to 1Tb Code
 document.getElementById('ssd256').addEventListener('click',function(){
     extraStorage.innerText= '0';
     updateTotalPrice();
@@ -30,6 +33,8 @@ document.getElementById('ssd1Tb').addEventListener('click',function(){
     extraStorage.innerText= '180';
     updateTotalPrice();
 })
+
+// For Delivery Code
 document.getElementById('freeCharge').addEventListener('click',function(){
     freePrice.innerText = '0';
     updateTotalPrice();
@@ -39,6 +44,7 @@ document.getElementById('Takalagbe').addEventListener('click',function(){
     updateTotalPrice();
 })
 
+// Grand Total Calcualtion
 
 function updateTotalPrice(){
  const productPriceValue= parseInt(freeCharge.innerText);
