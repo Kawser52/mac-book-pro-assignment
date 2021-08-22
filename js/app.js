@@ -47,7 +47,7 @@ function updateTotalPrice(){
  const delvieryCharge= parseInt(freePrice.innerText);
  const totalAmount= productPriceValue+bestAmount+storagePrice+delvieryCharge;
  totalPrice.innerText=totalAmount;
- grandTotalAmount.innerText = totalAmount;
+ grandTotalAmount.innerText=totalAmount;
 }
 
 
